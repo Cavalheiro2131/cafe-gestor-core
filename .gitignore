@@ -1,0 +1,13 @@
+# Saída de build do NetBeans/Ant
+build/
+dist/
+nbproject/private/
+
+# Drivers e arquivos locais
+lib/*.jar
+*.log
+*.class
+
+# Arquivos de sistema/IDE
+.DS_Store
+Thumbs.db
