@@ -1,5 +1,6 @@
 # Saída de build do NetBeans/Ant
 build/
+target/
 dist/
 nbproject/private/
 

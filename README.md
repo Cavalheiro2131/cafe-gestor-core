@@ -15,11 +15,12 @@ src/
     memory/     implementações em memória (usadas nos testes do main)
     jdbc/       implementações MySQL via JDBC
   security/     CodificadorSenha (interface) e CodificadorPbkdf2
-  service/      casos de uso: Autenticacao, Funcionario, TipoCafe, Balaio, Estoque
+  service/      casos de uso: Autenticacao, Funcionario, TipoCafe, Balaio, Estoque; CalculadoraProducao (cálculos puros)
   app/          FabricaDeServicos (raiz de composição / injeção de dependências)
   main/         Main (testes) e Verificador
 sql/            schema.sql e dados_iniciais.sql
 docs/           diagrama de classes original
+CafeGestorTests/  projeto Maven com os testes JUnit 5 (compila ../src junto com os testes)
 ```
 
 ## Como executar os testes
@@ -35,6 +36,12 @@ docs/           diagrama de classes original
 4. Em Properties > Run > Arguments, informe `--mysql`.
 
 Os mesmos testes rodam nos dois modos.
+
+## Testes JUnit
+
+O projeto `CafeGestorTests/` tem os testes unitários (JUnit 5), sem acesso a banco de dados.
+No NetBeans: abra a pasta `CafeGestorTests` e execute **Test** (Alt+F6), ou rode `mvn test` dentro dela.
+Detalhes em `CafeGestorTests/README.md`.
 
 ## Usando no Swing ou na Web
 
